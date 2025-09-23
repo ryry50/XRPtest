@@ -26,6 +26,13 @@ public class AutoShape extends SequentialCommandGroup {
         new TurnDegrees(Constants.DriveConstants.drivespeed, 64, drivetrain),
         new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(9), drivetrain),
         new TurnDegrees(Constants.DriveConstants.drivespeed, 80, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(10), drivetrain));
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(10), drivetrain),
+        //extended to dodecahedron
+        new TurnDegrees(-Constants.DriveConstants.drivespeed, 166, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(3), drivetrain),
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 107, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(7.2), drivetrain),
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 38, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(7.2), drivetrain));
   }
 }
