@@ -17,7 +17,10 @@ public final class Constants {
     public static final int kDriverControllerPort = 0;
   }
   public static class DriveConstants {
-    public final double drivespeed = 0.6;
-    public final double cmToInch = 2.54;
+    public static final double drivespeed = 0.6;
+    public static final double cmToInch = 2.54;
+    public static double distance(double cm){
+      return cm / cmToInch;
+    }
   }
 }
