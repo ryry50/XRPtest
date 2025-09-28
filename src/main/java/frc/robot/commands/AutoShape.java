@@ -23,16 +23,16 @@ public class AutoShape extends SequentialCommandGroup {
         new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(10), drivetrain),
         new TurnDegrees(Constants.DriveConstants.drivespeed, 80, drivetrain),
         new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(9), drivetrain),
-        new TurnDegrees(Constants.DriveConstants.drivespeed, 64, drivetrain),
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 35, drivetrain),
         new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(9), drivetrain),
         new TurnDegrees(Constants.DriveConstants.drivespeed, 80, drivetrain),
         new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(10), drivetrain),
-        //extended to dodecahedron
-        new TurnDegrees(-Constants.DriveConstants.drivespeed, 166, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(3), drivetrain),
-        new TurnDegrees(Constants.DriveConstants.drivespeed, 107, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(7.2), drivetrain),
-        new TurnDegrees(Constants.DriveConstants.drivespeed, 38, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(7.2), drivetrain));
+        //extended to Head poly
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 21, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(5), drivetrain),
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 48, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(3.6), drivetrain),
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 52, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, Constants.DriveConstants.distance(5), drivetrain));
   }
 }
