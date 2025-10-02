@@ -18,14 +18,14 @@ public class Parking extends SequentialCommandGroup {
    */
   public Parking(Drivetrain drivetrain) {
     addCommands(
-        new DriveDistance(Constants.DriveConstants.drivespeed, 13, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, 12.75, drivetrain),
         new TurnDegrees(Constants.DriveConstants.drivespeed, 45, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, -0.5, drivetrain),
-        new TurnDegrees(Constants.DriveConstants.drivespeed, 30, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, 2, drivetrain),
+        new DriveDistance(-Constants.DriveConstants.drivespeed, 0.5, drivetrain),
         new TurnDegrees(Constants.DriveConstants.drivespeed, 20, drivetrain),
-        new DriveDistance(Constants.DriveConstants.drivespeed, 5, drivetrain),
-        new TurnDegrees(Constants.DriveConstants.drivespeed, 95, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, 2, drivetrain),
+        new TurnDegrees(Constants.DriveConstants.drivespeed, 5, drivetrain),
+        new DriveDistance(Constants.DriveConstants.drivespeed, 12, drivetrain),
+        new TurnDegrees(-Constants.DriveConstants.drivespeed, 85, drivetrain),
         new DriveDistance(Constants.DriveConstants.drivespeed, 7, drivetrain));
         
   }

@@ -11,6 +11,7 @@ import frc.robot.commands.ArcadeDrive;
 import frc.robot.commands.AutoShape;
 import frc.robot.commands.AutonomousDistance;
 import frc.robot.commands.AutonomousTime;
+import frc.robot.commands.Parking;
 import frc.robot.subsystems.Arm;
 import frc.robot.subsystems.Drivetrain;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
@@ -75,6 +76,7 @@ public class RobotContainer {
 
     // Setup SmartDashboard options
     m_chooser.setDefaultOption("Auto Routine Shape", new AutoShape(m_drivetrain));
+    m_chooser.addOption("Auto Routine park", new Parking(m_drivetrain));
     m_chooser.addOption("Auto Routine Time", new AutonomousTime(m_drivetrain));
     SmartDashboard.putData(m_chooser);
   }
